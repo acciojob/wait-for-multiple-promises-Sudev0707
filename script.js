@@ -12,6 +12,7 @@ function createPromise(promiseNumber) {
 const promises = [createPromise(1), createPromise(2), createPromise(3)];
 
 const loadingRow = document.createElement('tr');
+loadingRow.id = 'loading';
 const loadingCell = document.createElement('td');
 loadingCell.colSpan = 2;
 loadingCell.textContent = 'Loading...';
